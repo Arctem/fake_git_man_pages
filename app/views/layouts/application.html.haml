@@ -2,13 +2,15 @@
 %html
   %head
     %title= "Git - #{yield(:title)}"
+    =stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    =javascript_include_tag 'application', 'data-turbolinks-track' => true
   %body
     %div.inner
       %header
-        =link_to image_tag('git_logo2x.png'), root_url
-      %span#tagline
-        = succeed @tagline do
-          %em= '--'
+        =link_to image_tag('git_logo2x.png', width: '110', height: '46'), root_url
+        %span#tagline
+          = succeed @tagline do
+            %em= '--'
     = yield
 
 
