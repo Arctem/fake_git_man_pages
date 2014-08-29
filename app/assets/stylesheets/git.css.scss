@@ -36,3 +36,31 @@ a {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 11px 25px;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  line-height: 22px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+  color: #4e443c;
+  text-rendering: optimizelegibility;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 44px;
+  color: #f14e32;
+  font-weight: bold;
+  margin-top: 20px;
+}

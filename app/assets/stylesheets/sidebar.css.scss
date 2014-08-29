@@ -1,0 +1,49 @@
+aside {
+  width: 218px;
+  float: left;
+  margin-bottom: 35px;
+
+  nav {
+    ul {
+      list-style: none;
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 0;
+      margin-bottom: 1.4em;
+
+      li {
+        margin-bottom: 0.5em;
+
+        a {
+          display: block;
+          color: #413932;
+        }
+
+        a.active {
+          color: #f14e32;
+        }
+
+        ul {
+          display: none;
+          margin-top: 0.3em;
+          margin-left: 20px;
+          font-weight: normal;
+          font-size: 13px;
+
+          li {
+            margin-bottom: 0;
+          }
+        }
+
+        ul.expanded {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+aside.sidebar {
+  font-size: 13px !important;
+  line-height: 16.5px;
+}

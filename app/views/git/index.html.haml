@@ -1,1 +1,34 @@
 - content_for(:title, 'git command name')
+
+%div.inner
+  =render :partial => 'sidebar'
+  %div#content
+    %div#reference-version
+      -#TODO: Implement the version bar and 'last updated' thing.
+      Git version info.
+    %div#main
+      %div.sect1
+        %h2#_name= 'NAME'
+        %div.sectionbody
+          %p= "git-#{@command_name} - #{@command_desc}"
+      %div.sect1
+        %h2#_name= 'SYNOPSIS'
+        %div.sectionbody
+      %div.sect1
+        %h2#_name= 'DESCRIPTION'
+        %div.sectionbody
+      %div.sect1
+        %h2#_name= 'OPTIONS'
+        %div.sectionbody
+      %div.sect1
+        %h2#_name= 'OUTPUT'
+        %div.sectionbody
+      -#
+        There are some more sections here - branchname tracking info and CONFIGURATION. Will consider.
+      %div.sect1
+        %h2#_name= 'SEE ALSO'
+        %div.sectionbody
+      %div.sect1
+        %h2#_name= 'GIT'
+        %div.sectionbody
+  %footer
