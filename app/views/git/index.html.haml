@@ -4,8 +4,11 @@
   =render :partial => 'sidebar'
   %div#content
     %div#reference-version
-      -#TODO: Implement the version bar and 'last updated' thing.
-      Git version info.
+      -#TODO: Implement the version dropdown.
+      %a.dropdown-trigger#reference-versions-trigger{'data-panel-id' => 'previous-versions-dropdown'}= "Version #{@version_num}"
+      %span.light
+        = "git-#{@command_name} last updated in #{@version_num}"
+      -#TODO: Add the topics dropdown with a random list of commands (popular ones?)
     %div#main
       %div.sect1
         %h2#_name= 'NAME'

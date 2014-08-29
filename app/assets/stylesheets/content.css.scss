@@ -1,3 +1,39 @@
+#reference-version {
+  position: relative;
+  background-color: rgba(223,221,213,0.33);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 8px 12px 6px 12px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: normal;
+
+  a {
+    top: -5px;
+    font-weight: bold;
+    position: relative;
+  }
+
+  a#reference-versions-trigger {
+    float: left;
+    margin-right: 6px;
+  }
+}
+
+a.dropdown-trigger {
+  padding: 4px 5px;
+  border: solid 1px transparent;
+}
+
+
+.light {
+  color: #9a9994;
+  font-weight: normal;
+}
+
 #content {
   width: 702px;
   float: right;
