@@ -1,9 +1,20 @@
+@font-face {
+  font-family: 'adelle';
+  src: font-url('/assets/fonts/AdelleBasic_Bold.otf');// format('opentype');
+  src: url(/assets/AdelleBasic_Bold.eot?#iefix) format("embedded-opentype"),
+    url(/assets/AdelleBasic_Bold.ttf) format("truetype"),
+    url(/assets/AdelleBasic_Bold.woff) format("woff"),
+    url(/assets/AdelleBasic_Bold.svg#AdelleBasic_Bold) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-size: 14px;
   line-height: 22px;
-  font-family: "adelle", Georgia, "Times New Roman", serif;
+  font-family: 'adelle', Georgia, 'Times New Roman', serif;
   color: #4e443c;
-  background: #f0efe7 image-url("/images/bg/body.jpg"); 
+  background: #f0efe7 image-url('/images/bg/body.jpg');
 }
 
 .inner {
