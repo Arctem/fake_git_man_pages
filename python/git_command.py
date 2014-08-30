@@ -1,4 +1,22 @@
 data = {
+  'old_words' : {
+    'template' : ['{old_disease}', '{old_units}', '{old_technology}', '{old_science}'],
+
+    #Source: http://en.wikipedia.org/wiki/List_of_deprecated_terms_for_diseases
+    'old_disease' : ['apoplexy', 'bilious', 'consumption', 'dropsy', 'front-street', 'gleet', 'grippe', 'lockjaw', 'norwalk', 'phthisis', 'quinsy', 'squinsy', 'undulant'],
+
+    #Source: http://en.wikipedia.org/wiki/Category:Obsolete_units_of_measurement
+    'old_units' : ['abucco', 'adowlie', 'angula', 'atom', 'bahar', 'buddam', 'carcel', 'carucate', 'cawnie', 'chungah', 'coomb', 'corgee', 'cubit', 'cullingey', 'cullishigay', 'delisle', 'dessiatin', 'dharni', 'dirham', 'ell', 'fanega', 'firlot', 'garce', 'girah', 'grzywna', 'guz', 'hekat', 'hobbit', 'homer', 'juchart', 'katha', 'koku', 'kula', 'ligne', 'mache', 'marabba', 'metretes', 'morgen', 'munjandie', 'oka', 'oxgang', 'peck', 'perch', 'poncelet', 'pood', 'spat', 'toise', 'unglie', 'wey', 'yojana', 'zentner', 'zolotnik', 'ordlach'],
+
+    #Source: http://en.wikipedia.org/wiki/Category:Obsolete_technologies
+    'old_technology' : ['ballista', 'calculagraph', 'carriage', 'catapult', 'kinescope', 'mimeograph', 'multi-image', 'pulse-dial', 'rotary', 'stauroscope', 'sundial'],
+
+    #Source: http://en.wikipedia.org/wiki/Category:Obsolete_scientific_theories
+    'old_science' : ['adamic', 'aether', 'antiperistasis', 'barlow', 'caloric', 'corpuscular', 'cyclol', 'dark-star', 'dualism', 'enochian', 'etheric', 'firmament', 'galactocentrism', 'geohumoral', 'vacui', 'imponderable', 'japhetic', 'quasar', 'lescarbault', 'limbic', 'luminiferous', 'milne', 'phrenol', 'polflucht', 'recapitulation', 'reticular', 'sublunary', 'impetus', 'thomson-berthelot', 'troidal', 'trepidation', 'tychonic', 'vulcan'],
+
+    #Possible other source: http://en.wikipedia.org/wiki/Category:Obsolete_taxonomic_groups, http://en.wikipedia.org/wiki/Category:Modern_obsolete_currencies, http://en.wikipedia.org/wiki/Category:Former_entities
+  },
+
   'git_command' : {
     'template' : ['{real_command}'],
 
@@ -32,9 +50,13 @@ data = {
   },
 
   'git_synopsis' : {
-    'template' : ["'git {username}'"],
+    'template' : ["'git {username}' {terms}"],
 
+    'terms' : ['{terms} {terms}', '{terms} [{term}]', '[{term}]'],
 
+    'term' : ['{term} <{option}>', '-{gen/vowel}', '-{gen/consonant}', '--{old_words/template}'],
+
+    'option' : ['{old_words/template}'],
   },
 
   'git_desc' : {
