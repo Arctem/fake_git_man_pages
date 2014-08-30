@@ -6,7 +6,35 @@ data = {
   },
 
   'git_short_desc' : {
-    'template' : []
+    'template' : ['{template} or {template}', '{verb} {thing}', '{verb} {thing} from {thing}', '{verb} {thing} {transition} {thing}'],
+
+    'thing' : ['{article} {adjective} {noun}', '{adjective} {nouns}', '{proper_noun}'],
+
+    'article' : ['a', 'the'],
+
+    'transition' : ['into', 'towards', 'using'],
+
+    'proper_noun' : ['Git', 'Linux', 'Unix', 'GNU'],
+
+    'noun' : ['{noun_tech}'],
+    'noun_tech' : ['tree', 'file', 'repository', 'option', 'terminal', 'shell', 'directory'],
+
+    'nouns' : ['{nouns_tech}'],
+    'nouns_tech' : ['trees', 'files', 'repositories', 'options', 'terminals', 'shells', 'directories', 'information about {thing}'],
+
+    'adjective' : ['{adj_standard}', '{adj_tech}'],
+    'adj_standard' : ['global', 'local', 'standard', 'helpful', 'empty', 'existing'],
+    'adj_tech' : ['working', 'bitwise', 'untracked', 'tracked', 'binary', 'encoded'],
+
+    'verb' : ['{verb} and {verb}', '{verb_standard}', '{verb_tech}'],
+    'verb_standard' : ['show', 'get', 'set', 'modify', 'display'],
+    'verb_tech' : ['invert', 'hash', 'upload', 'download', 'sync', 'create', 'reinitialize', 'clone']
+  },
+
+  'git_synopsis' : {
+    'template' : ["'git {username}'"],
+
+
   },
 
   'git_desc' : {
