@@ -1,0 +1,3 @@
+[submodule "python/phrase_maker"]
+	path = python/phrase_maker
+	url = git@github.com:Arctem/phrase_maker.git
